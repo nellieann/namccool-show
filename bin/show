@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+
+program
+	.option('-p, --port <port>', 'specify port for server', 5000)
+
+	.parse(process.argv);
+
+console.log('your port is ' + program.port);
